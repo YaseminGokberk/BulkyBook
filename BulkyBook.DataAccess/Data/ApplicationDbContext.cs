@@ -1,0 +1,15 @@
+﻿using BulkyBook.Models.ViewModels;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+
+namespace BulkyBook.DataAccess.Data
+{
+    public class ApplicationDbContext : IdentityDbContext
+    {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options)
+        {
+
+        }
+        public DbSet<Book> Book { get; set; }
+    }
+}
