@@ -1,4 +1,5 @@
-﻿using BulkyBook.Models.ViewModels;
+﻿using BulkyBook.Models;
+using BulkyBook.Models.ViewModels;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,6 +11,6 @@ namespace BulkyBook.DataAccess.Data
         {
 
         }
-        public DbSet<Book> Book { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
 }
